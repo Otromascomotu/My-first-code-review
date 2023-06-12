@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <h1 id="main_title">
+        Are you a Celiac person?
+    </h1>
+
+    <p id="description">The Celiac choice is a good option to people 
+      who have a disease and want to know 
+      if suffering that disease</p>
+
+    <form id="survey-form" action="">
+
+      <div>
+        <label id="nameLabel1">Name</label>
+        <input id="name" type="text" required placeholder="enter your name" name="survey"/>
+      </div>
+
+      <div>
+        <label id="emailLabel">Email</label>
+        <input id="email" pattern=".+@globex\.com" size="30" type="email" required placeholder="enter your email" name="survey"/>
+      </div>
+
+      <div>
+        <label id="numberLabel">Age</label>
+        <input min = "16" max = "100" id="number" type="number" required placeholder="enter your number" name="survey"/>
+      </div>
+
+      <div id = "checkboxes">
+      <p for=""> Have you some of these symptoms?</p>
+
+      <input type="checkbox">
+      <label for="">bloating</label>
+      <input type="checkbox">
+      <label for="">constipation</label>
+      <input type="checkbox">
+      <label for="">chronic diarrhea</label>
+      <input type="checkbox">
+      <label for="">gas</label>
+      <input type="checkbox">
+      <label for="">Nausea or vomiting</label>
+      </div>
+      
+    <label for="">Are you follow some of this diets?</label>
+    <select name="" id="dropdown">
+      <option value="0">Choose one option</option>
+      <option value="1">Vegetarian</option>
+      <option value="2">Vegan</option>
+      <option value="3">Normal meal with fast</option>
+
+    </select>
+
+    <p for="">What is your level of physical exercise?</p>
+    <input type="radio">
+    <label for="">No exercise</label>
+    <input type="radio">
+    <label for=""> 30 or less minutes a week </label>
+    <input type="radio">
+    <label for=""> 1 day per week</label>
+    <input type="radio">
+    <label for="">3 or more days per week</label>
+
+    <p> Tell us more about you</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <button> submit</button>
+
+    </form>
+
+    <script  src="js/index.js"></script>
+  </body>
+</html>
